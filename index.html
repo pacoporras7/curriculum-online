@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Curriculum - Samuel Martínez</title>
+    
+    <!-- Bootstrap y AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        body {
+            padding-top: 70px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            margin: 60px 0 40px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .skill-card {
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Samuel Martínez</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aptitudes">Aptitudes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn btn-outline-light btn-sm ms-2">🌙</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- INICIO -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <h1 class="display-3" data-aos="fade-up">Samuel Martínez</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">Desarrollador de Aplicaciones Multiplataforma</p>
+            <p data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-geo-alt-fill"></i> Alcobendas, Madrid
+            </p>
+            <a href="#contacto" class="btn btn-light btn-lg mt-3" data-aos="fade-up" data-aos-delay="400">
+                Contáctame
+            </a>
+        </div>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="educacion">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">📚 Educación</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skill-card bg-light" data-aos="fade-right">
+                        <h4>Greenwich School</h4>
+                        <p class="text-muted">Título de Bachillerato y ESO</p>
+                        <p><strong>Nota media ESO:</strong> 8</p>
+                        <p><strong>Nota media Bachillerato:</strong> 8.1</p>
+                        <p><strong>EVAU:</strong> 10.1</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="skill-card bg-light" data-aos="fade-left">
+                        <h4>Centro de Formación Profesional Xtart</h4>
+                        <p class="text-muted">Desarrollador de Aplicaciones Multiplataforma (DAM)</p>
+                        <p><span class="badge bg-success">Formación en curso</span></p>
+                        <p>Estudios actuales en desarrollo de aplicaciones para diferentes plataformas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APTITUDES -->
+    <section id="aptitudes">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">💪 Aptitudes</h2>
+            
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    
+                    <div class="mb-4" data-aos="fade-up">
+                        <h5>Trabajo en equipo y liderazgo</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <h5>Organización y responsabilidad</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <h5>Iniciativa y capacidad para resolver problemas</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">💼 Experiencia</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card mb-4" data-aos="zoom-in">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h4 class="card-title">Judo San</h4>
+                                <span class="badge bg-primary">2024-2025</span>
+                            </div>
+                            <h6 class="text-muted">2º Entrenador y Asistente Administrativo</h6>
+                            <p class="mt-3"><strong>Responsable:</strong> Olivia Martinez</p>
+                            <ul class="mt-3">
+                                <li>Impartí clases de judo a niños y adolescentes, fomentando la disciplina y el trabajo en equipo.</li>
+                                <li>Colaboré en la gestión administrativa del club, apoyando en tareas contables y organizativas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICADOS E IDIOMAS -->
+    <section id="certificados">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">🏆 Certificados y Idiomas</h2>
+            
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="card p-4">
+                        <h4>Certificados y Honores</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2">
+                                <i class="bi bi-award-fill text-warning"></i>
+                                <strong> B2 Cambridge College</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card p-4">
+                        <h4>Idiomas</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-3">
+                                <strong>Castellano</strong>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 100%">Nativo</div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <strong>Inglés</strong>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" style="width: 80%">B2</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">📧 Contacto</h2>
+            
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <div class="card p-4" data-aos="zoom-in">
+                        <h4>¡Hablemos!</h4>
+                        <p>Estoy disponible para nuevos proyectos y oportunidades.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-envelope-fill fs-1 text-primary"></i>
+                                <p class="mt-2"><strong>Email</strong></p>
+                                <p>SamuelMart2110@gmail.com</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-telephone-fill fs-1 text-success"></i>
+                                <p class="mt-2"><strong>Teléfono</strong></p>
+                                <p>+34 691 25 61 69</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-geo-alt-fill fs-1 text-danger"></i>
+                                <p class="mt-2"><strong>Ubicación</strong></p>
+                                <p>Alcobendas, Madrid</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <a href="mailto:SamuelMart2110@gmail.com" class="btn btn-primary btn-lg">
+                                <i class="bi bi-envelope-fill"></i> Enviar Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2026 Samuel Martínez</p>
+            <p>Desarrollador de Aplicaciones Multiplataforma</p>
+            <p>Alcobendas, Madrid</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Inicializar animaciones AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Botón de tema oscuro/claro
+        const toggleBtn = document.getElementById("themeToggle");
+        const html = document.documentElement;
+
+        toggleBtn.addEventListener("click", () => {
+            const currentTheme = html.getAttribute("data-bs-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            
+            html.setAttribute("data-bs-theme", newTheme);
+            toggleBtn.textContent = newTheme === "dark" ? "☀️" : "🌙";
+            
+            localStorage.setItem("theme", newTheme);
+        });
+
+        // Cargar tema guardado
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+            html.setAttribute("data-bs-theme", savedTheme);
+            toggleBtn.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
